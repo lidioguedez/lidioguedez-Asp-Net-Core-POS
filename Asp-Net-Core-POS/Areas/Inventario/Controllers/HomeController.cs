@@ -1,9 +1,10 @@
-﻿using Asp_Net_Core_POS.Models;
+﻿using Asp_Net_Core_POS.Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Asp_Net_Core_POS.Controllers
+namespace Asp_Net_Core_POS.Areas.Inventario.Inventario.Controllers
 {
+    [Area("Inventario")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

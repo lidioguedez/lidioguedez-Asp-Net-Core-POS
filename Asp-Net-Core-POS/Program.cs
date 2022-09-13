@@ -1,6 +1,7 @@
-using Asp_Net_Core_POS.Data;
+using Asp_Net_Core_POS.Logic.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace Asp_Net_Core_POS
 {
@@ -15,10 +16,10 @@ namespace Asp_Net_Core_POS
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //options => options.SignIn.RequireConfirmedAccount = true
+            builder.Services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             var app = builder.Build();
 
@@ -44,7 +45,7 @@ namespace Asp_Net_Core_POS
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area=Inventario}/{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
             app.Run();

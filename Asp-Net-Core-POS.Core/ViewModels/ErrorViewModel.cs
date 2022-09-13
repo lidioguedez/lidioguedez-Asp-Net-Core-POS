@@ -1,4 +1,4 @@
-namespace Asp_Net_Core_POS.Models
+namespace Asp_Net_Core_POS.Core.ViewModels
 {
     public class ErrorViewModel
     {

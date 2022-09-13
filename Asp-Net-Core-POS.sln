@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp-Net-Core-POS", "Asp-Net-Core-POS\Asp-Net-Core-POS.csproj", "{8DC84288-37B9-469D-BD1F-6FC27C9BDDCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp-Net-Core-POS", "Asp-Net-Core-POS\Asp-Net-Core-POS.csproj", "{8DC84288-37B9-469D-BD1F-6FC27C9BDDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp-Net-Core-POS.Core", "Asp-Net-Core-POS.Core\Asp-Net-Core-POS.Core.csproj", "{66953638-E814-43E2-8E70-FDF853A0CC78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp-Net-Core-POS.Logic", "Asp-Net-Core-POS.Logic\Asp-Net-Core-POS.Logic.csproj", "{2118E33E-848E-4188-842B-6246B407E7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp-Net-Core-POS.Utilities", "Asp-Net-Core-POS.Utilities\Asp-Net-Core-POS.Utilities.csproj", "{7159D0DF-0972-4427-AF9C-6DE35E12D19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{8DC84288-37B9-469D-BD1F-6FC27C9BDDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC84288-37B9-469D-BD1F-6FC27C9BDDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC84288-37B9-469D-BD1F-6FC27C9BDDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66953638-E814-43E2-8E70-FDF853A0CC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66953638-E814-43E2-8E70-FDF853A0CC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66953638-E814-43E2-8E70-FDF853A0CC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66953638-E814-43E2-8E70-FDF853A0CC78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2118E33E-848E-4188-842B-6246B407E7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2118E33E-848E-4188-842B-6246B407E7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2118E33E-848E-4188-842B-6246B407E7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2118E33E-848E-4188-842B-6246B407E7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7159D0DF-0972-4427-AF9C-6DE35E12D19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7159D0DF-0972-4427-AF9C-6DE35E12D19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7159D0DF-0972-4427-AF9C-6DE35E12D19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7159D0DF-0972-4427-AF9C-6DE35E12D19F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
