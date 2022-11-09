@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Asp-Net-Core-POS.Core\Asp-Net-Core-POS.Core.csproj" />
+  </ItemGroup>
+
 </Project>

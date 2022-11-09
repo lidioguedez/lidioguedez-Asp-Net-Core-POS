@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Asp_Net_Core_POS.Areas.Inventario.Inventario.Controllers
+namespace Asp_Net_Core_POS.Areas.Inventario.Controllers
 {
     [Area("Inventario")]
     public class HomeController : Controller

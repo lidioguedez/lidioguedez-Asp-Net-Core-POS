@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asp_Net_Core_POS.Utilities
+namespace Asp_Net_Core_POS.Core.Model
 {
-    public static class Ds
+    internal class Bodega
     {
     }
 }

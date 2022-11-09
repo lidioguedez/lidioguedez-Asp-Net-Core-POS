@@ -15,10 +15,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\Migrations\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\Asp-Net-Core-POS.Core\Asp-Net-Core-POS.Core.csproj" />
 	  <ProjectReference Include="..\Asp-Net-Core-POS.Utilities\Asp-Net-Core-POS.Utilities.csproj" />
 	</ItemGroup>

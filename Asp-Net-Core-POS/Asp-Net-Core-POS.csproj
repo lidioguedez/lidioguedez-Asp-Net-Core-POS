@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Asp-Net-Core-POS.Core\Asp-Net-Core-POS.Core.csproj" />
     <ProjectReference Include="..\Asp-Net-Core-POS.Logic\Asp-Net-Core-POS.Logic.csproj" />
+    <ProjectReference Include="..\Asp-Net-Core-POS.Utilities\Asp-Net-Core-POS.Utilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
