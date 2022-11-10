@@ -1,4 +1,6 @@
 ﻿using Asp_Net_Core_POS.Core.ViewModels;
+using Asp_Net_Core_POS.Logic.Interface;
+using Asp_Net_Core_POS.Logic.Repository.Interfases;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,13 +10,15 @@ namespace Asp_Net_Core_POS.Areas.Inventario.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IBodegaServices _bodegaService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IBodegaServices bodegaService)
         {
             _logger = logger;
+            _bodegaService = bodegaService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }
@@ -25,7 +29,7 @@ namespace Asp_Net_Core_POS.Areas.Inventario.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult ErrorAsync()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }

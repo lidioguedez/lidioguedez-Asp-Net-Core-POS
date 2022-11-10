@@ -1,4 +1,9 @@
+using Asp_Net_Core_POS.Core.Model;
 using Asp_Net_Core_POS.Logic.Data;
+using Asp_Net_Core_POS.Logic.Interface;
+using Asp_Net_Core_POS.Logic.Repository;
+using Asp_Net_Core_POS.Logic.Repository.Interfases;
+using Asp_Net_Core_POS.Logic.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +22,8 @@ namespace Asp_Net_Core_POS
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
             //options => options.SignIn.RequireConfirmedAccount = true
+            builder.Services.AddScoped<IBodegaServices, BodegaServices>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
