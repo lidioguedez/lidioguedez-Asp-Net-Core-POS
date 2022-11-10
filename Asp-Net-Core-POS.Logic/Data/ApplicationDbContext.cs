@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Asp_Net_Core_POS.Core.Model;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Asp_Net_Core_POS.Logic.Data
@@ -9,5 +10,7 @@ namespace Asp_Net_Core_POS.Logic.Data
             : base(options)
         {
         }
-    }
+
+        public DbSet<Bodega> Bodegas {get; set;}
+}
 }
